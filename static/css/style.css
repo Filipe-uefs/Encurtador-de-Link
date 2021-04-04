@@ -1,0 +1,34 @@
+
+
+body{
+	margin: auto;
+	background-color: blue;
+}
+
+.title{
+	margin-top: 2%;
+	margin-left: 15%;
+	text-align: center;
+	background-color: black;
+	color: red;
+	width: 30%;
+	height: 8%;
+	border-radius: 5px;
+	color: white;
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+
+.form-inline {
+	margin-top: 8%;
+	margin-left: 35%;
+	background-color: goldenrod;
+	width: 30%;
+	height: 17%;
+	border-radius: 10px;
+}
+
+.form-inline button{
+	margin-left: 15%;
+}
