@@ -1,0 +1,8 @@
+
+
+.idea/
+db/database.db-shm
+db/database.db-wal
+venv/
+db/__pycache__/
+helpers/__pycache__/

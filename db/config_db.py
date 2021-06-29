@@ -6,9 +6,7 @@ sqlite_db = SqliteDatabase('db/database.db', pragmas={
     'cache_size': -1024 * 64})
 
 
-
 class BaseModel(peewee.Model):
 
     class Meta:
-    	
         database = sqlite_db

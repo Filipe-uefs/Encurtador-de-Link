@@ -10,6 +10,7 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # a route where we will display a welcome message via an HTML template
 
+
 @app.route("/")
 def main():
 	return render_template('index.html')
@@ -29,9 +30,9 @@ def return_link(index):
 	if len(url)==0:
 		return render_template("erro.html")
 
+	return redirect(url[0]["url"], code=302)
 
-	return redirect("https://www.google.com/", code=302)
 
 # run the application
 if __name__ == "__main__":
-    app.run(debug=True)
+	app.run(debug=True)
