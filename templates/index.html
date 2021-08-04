@@ -1,19 +1,26 @@
-<!-- templates/index.html -->
-<html>
- <head>
-    <title>Flask Shop</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- </head>
- <body>
- 	
-	<p class="title">Encutador de Link</p>
-	<form class="form-inline">
-	  <div class="form-group mx-sm-3 mb-2">
-	    <input type="text" class="form-control" id="link" placeholder="Link">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encurtador de link</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form class="form-inline">
+			<div class="form-group mx-sm-3 mb-2">
+			  <input type="text" class="form-control" id="link" placeholder="Link">
+			</div>
+			<button type="submit" class="btn btn-primary mb-2" id="send">Encurtar link</button>
+		  </form>
+		  
+		  <div class="alert alert-success" role="alert" id="display-link">
+			Link:
+		  </div>
 	  </div>
-	  <button type="submit" class="btn btn-primary mb-2" id="send">Encurtar</button>
-	</form>
-  </body>
+</body>
 <script src="../static/js/app.js" charset="utf-8"></script>
 </html>

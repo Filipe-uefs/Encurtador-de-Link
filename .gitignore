@@ -1,6 +1,7 @@
 
 
 .idea/
+__pycache__
 db/database.db-shm
 db/database.db-wal
 venv/
